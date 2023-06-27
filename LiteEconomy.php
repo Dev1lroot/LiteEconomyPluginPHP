@@ -42,7 +42,8 @@ class LiteEconomy{
 
         // Checking whether is account exists
         $result = $this->selectBalance($player);
-        
+
+        // Both return true|false on success|failure of the operation
         if(isset($result->id))
         {
             // Update existing account
